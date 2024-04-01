@@ -1,0 +1,139 @@
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+  background: transparent;
+}
+
+.bg-img img {
+  width: 45vw;
+  
+}
+.wrapper {
+  position: relative;
+  margin: 120px 100px;
+ 
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(228, 227, 227, 0.987);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+h4 {
+  color: rgb(112, 114, 114);
+}
+
+h2 {
+  color: rgb(46, 46, 46);
+}
+
+h3 {
+  color: rgb(99, 98, 98);
+}
+
+button {
+  max-width: 320px;
+  display: flex;
+  padding: 0.5rem 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  gap: 0.75rem;
+  color: rgb(65, 63, 63);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.6s ease;
+  margin: auto;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.button svg {
+  height: 24px;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+.content__or-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  column-gap: 18px;
+  margin-top: 18px;
+}
+
+.content__or-text span:nth-child(3),
+.content__or-text span:nth-child(1) {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(107, 105, 105);
+}
+
+.input-group {
+  position: relative;
+  margin: 30px 0;
+}
+
+.input-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #626161;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.input-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  background: transparent;
+}
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #545252;
+  font-size: 15px;
+}
+.continue {
+  padding: 10px;
+  margin: auto;
+  width: 50%;
+}
+
+.signUp-link {
+  font-size: 14px;
+  text-align: center;
+  margin: 15px 0;
+}
+.signUp-link p {
+  color: #464646;
+}
+.signUp-link p a {
+  color: rgb(0, 51, 255);
+  text-decoration: none;
+  font-weight: 500;
+}
+.signUp-link p a:hover {
+  text-decoration: underline;
+}
