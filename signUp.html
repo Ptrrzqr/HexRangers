@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signUp.css">
-    <title>HexRangers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="bg" id="sign">
-    <div class="bg-img">
-      <img src="asset/sign up.jpg" alt="sign" />
-    </div>
 
-    <div class="position-relative">
-     
-    <div class="wrapper">
-    <form action="#">
-    <h4>Step 1 of 2</h4>
+  <div class="bg-img">
+    <img id="signup" src="asset/sign up.jpg" >
+  </div>
+  
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form action="">
+       
+        <h4>Step 1 of 2</h4>
     <h2>Create An Account</h2>
-    <button class="button">
+
+      <button class="button1">
         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">
         <path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path>
         <path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path>
@@ -28,31 +32,32 @@
         Continue with Google
       </button>
 
-      <div class="content__or-text">
-        <span></span>
-        <span>OR</span>
-        <span></span>
-      </div>
+    <div class="content__or-text">
+      <span></span>
+      <span>OR</span>
+      <span></span>
+    </div>
 
-    <div class="register">
-        <form action="#">
-        <h3>Register</h3>
-        
+    <h3>Sign Up</h3>
+
+    <div class="signUp-link">
+    <p>Already Have An Account? <a href="#" class="signUpBtn-link">Sign In</a></p>
+  </div>
+
         <div class="input-group">
-            <input type="text" required>
-            <label for="">Email Address</label>
-          </div>
+          <input type="text" required>
+          <label for="">Email Address</label>
+        </div>
+
+        <div class="input-group">
+          <input type="password" required>
+          <label for="">Password</label>
+        </div>
   
-          <div class="input-group">
-            <input type="password" required>
-            <label for="">Password</label>
-         <button class="continue" type="button">Create Account</button>
-         </button>
-        
-          <div class="signUp-link">
-            <p>Already Have An Account? <a href="#" class="signUpBtn-link">Sign In</a></p>
-          </div>
-          </form>
-  
+<button class="custom-btn btn-1" type="submit">Continue</button>
+
+      </form>
+    </div>
+    
 </body>
 </html>
