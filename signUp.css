@@ -1,40 +1,78 @@
-.bg {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 60px;
   align-items: center;
-  gap: 9rem;
+  min-height: 100vh;
   background: transparent;
 }
 
-.bg-img img {
-  width: 45vw;
+#signup {
+  width: 60vw;
   
 }
 .wrapper {
   position: relative;
-  margin: 120px 100px;
- 
-  width: 400px;
-  padding: 40px;
-  transform: translate(-50%, -50%);
-  background: rgba(228, 227, 227, 0.987);
-  box-sizing: border-box;
+  width: 420px;
+  height: 520px;
+  background: #f0efef;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+  border-radius: 5px;
+  color: rgb(24, 23, 23);
+  padding: 50px 20px;
+  backdrop-filter: blur(20px);
 }
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
 h4 {
-  color: rgb(112, 114, 114);
+  color: rgb(137, 148, 153);
+  text-align: start;
 }
 
 h2 {
-  color: rgb(46, 46, 46);
+  color: rgb(54, 69, 79);
+  text-align: start;
+  margin-bottom: 10px;
 }
 
 h3 {
-  color: rgb(99, 98, 98);
+  color: rgb(132, 136, 132);
+  text-align: start;
 }
 
-button {
+.signUp-link {
+  font-size: 14px;
+  text-align: center;
+  margin: 15px 0;
+  text-align: start;
+}
+.signUp-link p {
+  color: rgb(128, 128, 128);
+}
+.signUp-link p a {
+  color: rgb(91, 119, 244);
+  text-decoration: none;
+  font-weight: 500;
+}
+.signUp-link p a:hover {
+  text-decoration: underline;
+}
+
+.button1 {
   max-width: 320px;
   display: flex;
   padding: 0.5rem 1.4rem;
@@ -57,13 +95,19 @@ button {
   justify-content: flex-end;
 }
 
-.button svg {
+.button1 svg {
   height: 24px;
 }
 
-button:hover {
+.button1:hover {
   transform: scale(1.02);
 }
+.input-group {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #8d8a8a;
+}
+
 .content__or-text {
   display: flex;
   justify-content: space-between;
@@ -79,61 +123,61 @@ button:hover {
   display: block;
   width: 100%;
   height: 1px;
-  background-color: rgb(107, 105, 105);
-}
-
-.input-group {
-  position: relative;
-  margin: 30px 0;
+  background-color: rgb(128, 128, 128);
 }
 
 .input-group label {
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 18px;
-  color: #626161;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: rgb(128, 128, 128);
   pointer-events: none;
   transition: 0.5s;
 }
 .input-group input {
-  width: 100%;
-  padding: 10px 0;
+  width: 320px;
+  height: 40px;
   font-size: 16px;
-  color: black;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #000000;
-  outline: none;
+  color: #000000;
+  padding: 0 5px;
   background: transparent;
+  border: none;
+  outline: none;
 }
 .input-group input:focus ~ label,
 .input-group input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #545252;
-  font-size: 15px;
-}
-.continue {
-  padding: 10px;
-  margin: auto;
-  width: 50%;
+  top: -5px;
 }
 
-.signUp-link {
-  font-size: 14px;
-  text-align: center;
-  margin: 15px 0;
-}
-.signUp-link p {
-  color: #464646;
-}
-.signUp-link p a {
-  color: rgb(0, 51, 255);
-  text-decoration: none;
+.custom-btn {
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
   font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
-.signUp-link p a:hover {
-  text-decoration: underline;
+
+.btn-1 {
+  background: rgb(82, 139, 252);
+  border: none;
+}
+
+.btn-1:before {
+  height: 0%;
+  width: 1px;
+}
+
+.btn-1:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5), -4px -4px 6px 0 rgba(116, 125, 136, 0.5), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
